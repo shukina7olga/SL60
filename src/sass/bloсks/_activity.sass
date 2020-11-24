@@ -1,0 +1,40 @@
+.activity
+    padding-top: 1%
+    padding-bottom: 2%
+    &-title
+        text-align: center
+        +bold
+        color: $blue
+    &-blocks
+        &_block
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+        &_middle
+            flex-direction: row-reverse
+
+.item
+    &-inf
+        &_title
+            +bold
+        &_text
+        &_btn
+            color: $main-color
+            background: $blue
+            border: none
+            padding: 10px
+            padding-left: 22px
+            padding-right: 22px
+    &-wrapper
+        width: 481px
+        margin-top: 3%
+        margin-left: 6%
+    
+@media (max-width: 1200px)
+    .item
+        &-inf    
+            &_btn
+                margin-bottom: 8%
+        &-wrapper
+            margin-top: 0   
+            margin-left: 0

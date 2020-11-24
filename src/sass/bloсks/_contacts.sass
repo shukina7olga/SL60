@@ -1,0 +1,41 @@
+.contacts
+    background-image: url('../img/cont.png')
+    padding-top: 1%
+    padding-bottom: 2%
+    &-block
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+    &-blocks
+            display: flex
+            flex-direction: column
+    &-title
+        +bold
+        text-align: center
+        margin-bottom: 0
+    &-text
+        text-align: center
+    &-input
+        padding-top: 7%
+        &_text
+            margin: 0
+            padding-bottom: 1%  
+        &_inp
+            margin-bottom: 5%
+            width: 100%
+        &_qstn
+            height: 45px
+        &_btn
+            margin: auto
+            width: 70%
+            color: $blue
+            border: 1px solid $blue
+            background: transparent
+            padding: 7px
+            font-size: 14px
+
+@media (max-width: 768px)
+    .contacts
+        &-input
+            &_btn
+                margin-bottom: 12%

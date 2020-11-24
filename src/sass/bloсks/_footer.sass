@@ -1,0 +1,39 @@
+.footer
+    background-color: #2F3340
+    padding-top: 8px
+    padding-bottom: 8px
+    &-inf
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &-social
+        width: 10%
+        &_a
+            padding-right: 5%
+        &_img
+            &:hover
+                box-shadow: 0 14px 28px #fcfcfc40, 0 9px 9px rgba(0,0,0,0.10)
+
+@media (max-width: 1200px)
+    .footer
+        &-social 
+            width: 17%
+
+@media (max-width: 768px)
+    .footer
+        &-social 
+            width: 22%
+    
+@media (max-width: 578px)
+    .footer
+        &-social 
+            width: 30%
+        &-inf
+            justify-content: space-around    
+
+@media (max-width: 424px)
+    .footer
+        padding-top: 2px
+        padding-bottom: 2px
+        &-social 
+            width: 40%

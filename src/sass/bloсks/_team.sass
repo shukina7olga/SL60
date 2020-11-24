@@ -1,0 +1,39 @@
+.team
+    padding-top: 1%
+    padding-bottom: 2%
+    &-title
+        +bold
+        color: $blue
+        text-align: center
+    &-blocks
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+    &-block
+        display: flex
+        flex-direction: column
+        align-items: center
+        width: 325px
+        &:hover
+            .team-block_im:before
+                opacity: 0
+        &_text
+            text-align: center
+        &_title
+            margin-bottom: 0
+        &_im
+            position: relative
+            &:before
+                content: ''
+                position: absolute
+                left: 0
+                top: 0
+                width: 100%
+                height: 100%
+                background-image: linear-gradient(to top, $blue 0%, rgba(255,255,255,0)100%)
+                opacity: 0 
+                transition: 0.2s
+                opacity: 1
+
+
+
