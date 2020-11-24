@@ -205,9 +205,6 @@ button:hover {
 }
 
 @media (max-width: 1200px) {
-  .hero {
-    height: 570px;
-  }
   .hero-title {
     font-size: 35px;
   }
@@ -226,9 +223,6 @@ button:hover {
 }
 
 @media (max-width: 768px) {
-  .hero {
-    height: 490px;
-  }
   .hero-title {
     font-size: 28px;
   }
