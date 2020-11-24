@@ -51,12 +51,31 @@
 
 @media (max-width: 635px)
     .navbar
-        &-menu
-            width: 67%
+        margin-top: 4.5%
         &-img
-            width: 10%
-            &_item
-                margin-left: 0
-                font-size: 10px
-            &-btn
-                font-size: 9px    
+            width: 19%
+        &-menu
+            display: none
+        &-btn
+            display: none
+    .hamburger
+        position: relative  
+        display: block  
+        width: 34px 
+        height: 19px    
+        margin-left: 65%    
+        border-top: 2px solid #fff  
+        border-bottom: 2px solid #fff   
+    .hamburger:before 
+        content: ""
+        position: absolute
+        top: 6px
+        left: 0px
+        width: 100%
+        border-top: 2px solid #fff
+
+@media (max-width: 425px)
+    .navbar
+        &-img
+            width: 22%
+            margin-left: 2%
