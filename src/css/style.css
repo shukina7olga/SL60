@@ -246,6 +246,9 @@ button:hover {
 }
 
 @media (max-width: 768px) {
+  .hero {
+    height: 620px;
+  }
   .hero-title {
     padding-top: 38%;
     font-size: 28px;
@@ -328,6 +331,12 @@ button:hover {
   }
 }
 
+@media (max-width: 768px) {
+  .activity-title {
+    margin-top: 6%;
+  }
+}
+
 /*задачи*/
 .tasks {
   background-color: #FAF9FE;
@@ -378,6 +387,12 @@ button:hover {
 @media (max-width: 870px) {
   .tasks-bkg {
     height: 115px;
+  }
+}
+
+@media (max-width: 768px) {
+  .theader {
+    margin: 0;
   }
 }
 
@@ -454,6 +469,12 @@ button:hover {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .team-title {
+    margin-top: 6%;
+  }
 }
 
 /*контакты*/
@@ -567,18 +588,23 @@ button:hover {
 }
 
 @media (max-width: 768px) {
+  .footer {
+    height: 62px;
+  }
   .footer-social {
     width: 22%;
+  }
+  .footer-img {
+    width: 13%;
   }
 }
 
 @media (max-width: 578px) {
+  .footer {
+    height: 55px;
+  }
   .footer-social {
     width: 30%;
-  }
-  .footer-inf {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
   }
 }
 
@@ -589,6 +615,12 @@ button:hover {
   }
   .footer-social {
     width: 40%;
+  }
+}
+
+@media (max-width: 320px) {
+  .footer-img {
+    width: 25%;
   }
 }
 /*# sourceMappingURL=style.css.map */
