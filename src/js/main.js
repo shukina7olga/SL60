@@ -34,7 +34,7 @@ window.addEventListener('DOMContentLoaded', () => {
             const nav = document.querySelector(".navbar");
             const wraphum = document.querySelector(".wraphum");
             nav.style.background = "none";
-            nav.style.marginTop = "1.5%";
+            //nav.style.marginTop = "1.5%";
             wraphum.style.backgroundColor = 'unset';
         }
         if (docWidth < 635) {
