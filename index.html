@@ -193,19 +193,21 @@
                         </div>
                         
                     </div>
-                    <div class="contacts-blocks">
-                        <h2 class="contacts-title">Форма обратной связи</h2>
-                        <div class="contacts-input">
-                            <p class="contacts-input_text">Имя</p>
-                            <input type="text" class="contacts-input_inp">
-                            <p class="contacts-input_text">Почтовый адрес</p>
-                            <input type="text" class="contacts-input_inp">
-                            <p class="contacts-input_text">Ваш вопрос</p>
-                            <textarea id="text" class="contacts-input_qstn"></textarea>
-                        </div>
-                        <button class="contacts-input_btn">Отправить</button>
 
-                    </div>                
+                    <form action="mail.php" method="POST">
+                        <div class="contacts-blocks">
+                            <h2 class="contacts-title">Форма обратной связи</h2>
+                            <div class="contacts-input">
+                                <p class="contacts-input_text">Имя</p>
+                                <input name="user_name" type="text" class="contacts-input_inp">
+                                <p class="contacts-input_text">Почтовый адрес</p>
+                                <input name="user_email" type="text" class="contacts-input_inp">
+                                <p class="contacts-input_text">Ваш вопрос</p>
+                                <textarea name="user_qst" id="text" class="contacts-input_qstn"></textarea>
+                            </div>
+                            <button type="submit" class="contacts-input_btn">Отправить</button>
+                        </div> 
+                    </form>               
                 </div>
 
             </div>
