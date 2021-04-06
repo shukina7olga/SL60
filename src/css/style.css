@@ -44,6 +44,11 @@ button:hover {
   margin: auto;
 }
 
+.wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
 @media (max-width: 1200px) {
   .container {
     width: 760px;
@@ -83,6 +88,7 @@ button:hover {
 
 /*навбар*/
 .navbar {
+  z-index: 3;
   position: fixed;
   top: 0;
   width: 100%;
@@ -127,6 +133,10 @@ button:hover {
   color: #ffff;
 }
 
+.navbar-btn-a {
+  color: #ffff;
+}
+
 @media (max-width: 1200px) {
   .navbar-menu {
     width: 62%;
@@ -163,22 +173,71 @@ button:hover {
 @media (max-width: 635px) {
   .navbar {
     margin-top: 4.5%;
+    left: 0;
+    top: 0;
+    width: 30%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  .navbar-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .navbar-img {
-    width: 19%;
+    display: none;
   }
   .navbar-menu {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 50%;
+    width: 50%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar-menu_item {
+    margin-top: 92%;
+    text-align: center;
   }
   .navbar-btn {
     display: none;
+  }
+  .navbar-active {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  .wraphum {
+    position: absolute;
+    right: -60px;
+    top: 5px;
+    padding: 7px 5px;
   }
   .hamburger {
     position: relative;
     display: block;
     width: 34px;
     height: 19px;
-    margin-left: 65%;
     border-top: 2px solid #fff;
     border-bottom: 2px solid #fff;
   }
@@ -189,13 +248,6 @@ button:hover {
     left: 0px;
     width: 100%;
     border-top: 2px solid #fff;
-  }
-}
-
-@media (max-width: 425px) {
-  .navbar-img {
-    width: 22%;
-    margin-left: 2%;
   }
 }
 
@@ -531,6 +583,13 @@ button:hover {
 
 .contacts-input_qstn {
   height: 45px;
+  width: 100%;
+  resize: none;
+  border-radius: 5px;
+  outline: none;
+  border: 1.5px solid #153450;
+  overflow: hidden;
+  margin-bottom: 5px;
 }
 
 .contacts-input_btn {

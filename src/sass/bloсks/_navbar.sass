@@ -1,4 +1,5 @@
 .navbar
+    z-index: 3
     position: fixed 
     top: 0
     width: 100%
@@ -22,6 +23,8 @@
         font-size: 14px
         &:hover
             cursor: pointer
+            color: #ffff
+        &-a
             color: #ffff
 
 @media (max-width: 1200px)
@@ -52,20 +55,46 @@
 @media (max-width: 635px)
     .navbar
         margin-top: 4.5%
+        left: 0
+        top: 0
+        width: 30%
+        height: 100vh
+        display: flex
+        align-items: center
+        justify-content: center
+        transition: 0.5s
+        transform: translateX(-100%)
+        &-block
+            flex-direction: column
         &-img
-            width: 19%
-        &-menu
             display: none
+        &-menu
+            display: flex
+            justify-content: space-around
+            align-items: center
+            height: 50%
+            width: 50%
+            flex-direction: column
+            &_item
+                margin-top: 92%
+                text-align: center
         &-btn
             display: none
+    .navbar-active
+        transform: translateX(0%)
+    .wraphum
+        position: absolute
+        right: -60px
+        top: 5px
+        padding: 7px 5px
+        //background-color: #153450
     .hamburger
         position: relative  
         display: block  
         width: 34px 
-        height: 19px    
-        margin-left: 65%    
+        height: 19px     
         border-top: 2px solid #fff  
-        border-bottom: 2px solid #fff   
+        border-bottom: 2px solid #fff  
     .hamburger:before 
         content: ""
         position: absolute
@@ -74,8 +103,11 @@
         width: 100%
         border-top: 2px solid #fff
 
-@media (max-width: 425px)
-    .navbar
-        &-img
-            width: 22%
-            margin-left: 2%
+//@media (max-width: 425px)
+//    .wraphum
+//        margin-right: -210px
+//        margin-top: -90px
+
+//@media (max-width: 380px)
+//    .wraphum
+//        margin-top: -162px

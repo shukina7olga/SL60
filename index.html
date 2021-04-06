@@ -9,224 +9,231 @@
     <link rel="stylesheet" href="src/css/normalize.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <div class="navbar-block">
-                <img class="navbar-img" src="src/img/Logo.svg" alt="лого">
-                <span class="hamburger"></span>
-                <div class="navbar-menu">
-                    <a name="hero" class="navbar-menu_item">Главная</a>
-                    <a name="activity" class="navbar-menu_item">Мероприятия</a>
-                    <a href="" class="navbar-menu_item">Задачи</a>
-                    <a href="" class="navbar-menu_item">Наша команда</a>
-                    <a name="contacts" class="navbar-menu_item">Контакты</a>
+    <div class="wrapper">
+        
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-block">
+                    <img class="navbar-img" src="src/img/Logo.svg" alt="лого">
+                    <div class="wraphum">
+                        <a href="#" class="hamburger"></a>
+                    </div>
+                        
+                    <div class="navbar-menu">
+                        <a href="#hero" class="navbar-menu_item">Главная</a>
+                        <a href="#activity" class="navbar-menu_item">Мероприятия</a>
+                        <a href="#tasks" class="navbar-menu_item">Задачи</a>
+                        <a href="#team" class="navbar-menu_item">Наша команда</a>
+                        <a href="#contacts" class="navbar-menu_item">Контакты</a>
+                    </div>
+                    <button class="navbar-btn"><a href="#contacts" class="navbar-btn-a">Свяжитесь с нами</a></button>
                 </div>
-                <button class="navbar-btn">Свяжитесь с нами</button>
+            </div>
+        </nav>
+
+        <div class="hero">
+            <div class="container" id="hero">
+                <h1 class="hero-title">Беспилотные автомобили</h1>
+                <a href="#hero"></a>
+                <h2 class="hero-subtitle">
+                    Наша команда занимается разработкой уникальной системы беспилотного управления автомобилями.
+                </h2>
+            </div>
+        </div>      
+
+        <div class="activity">
+            <div class="container" id="activity">
+                <h2 class="activity-title">Мероприятия</h2>
+                <a href="#activity"></a>
+                <div class="activity-blocks">
+                    <div class="activity-blocks_block item">
+
+                        <div class="item-wrapper">
+                            <img src="src/img/activity/item1.jpg" alt="" class="item-img">
+                        </div>
+
+                        <div class="item-wrapper">
+                            <h3 class="item-inf_title">
+                                Крымский мост
+                            </h3>
+                            <p class="item-inf_text">
+                                5 мая 2018 года на участке федеральной трассы  Новороссийск — Керчь
+                                в рамках проекта «Караван» состоялся премьерный тестовый проезд ...
+                            </p>
+                            <button class="item-inf_btn">Узнать больше</button> 
+                        </div>
+
+
+                    </div>
+                    <div class="activity-blocks_block item activity-blocks_middle">
+                        
+                        <div class="item-wrapper">
+                            <img src="src/img/activity/item2.jpg" alt="" class="item-img">
+                        </div>
+
+                        <div class="item-wrapper">
+                            <h3 class="item-inf_title">
+                                Ice Vision
+                            </h3>
+                            <p class="item-inf_text">
+                                Соревнования, направленные на поиск решений, позволяющих распозновать
+                                дорогу дорожную обстановку даже в экстримальных условиях  ...
+                            </p>
+                            <button class="item-inf_btn">Узнать больше</button>
+                        </div>
+
+                    </div>
+                    <div class="activity-blocks_block item">
+
+                        <div class="item-wrapper">
+                            <img src="src/img/activity/item3.jpg" alt="" class="item-img">
+                        </div>
+
+                        <div class="item-wrapper">
+                            <h3 class="item-inf_title">
+                                Зимний город
+                            </h3>
+                            <p class="item-inf_text">
+                                С 26 февраля по 5 марта прошли квалификационные испытания
+                                для участников технологического конкурса Up Great ...
+                            </p>
+                            <button class="item-inf_btn">Узнать больше</button>                        
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
 
-    <div class="hero">
-        <div class="container">
-            <h1 class="hero-title">Беспилотные автмобили</h1>
-            <a href="#hero"></a>
-            <h2 class="hero-subtitle">
-                Наша команда занимается разработкой уникальной системы беспилотного управления автомобилями.
-            </h2>
-        </div>
-    </div>      
-    
-    <div class="activity">
-        <div class="container">
-            <h2 class="activity-title">Мероприятия</h2>
-            <a href="#activity"></a>
-            <div class="activity-blocks">
-                <div class="activity-blocks_block item">
-
-                    <div class="item-wrapper">
-                        <img src="src/img/activity/item1.jpg" alt="" class="item-img">
-                    </div>
-
-                    <div class="item-wrapper">
-                        <h3 class="item-inf_title">
-                            Крымский мост
+        <div class="tasks">
+            <h2 class="tasks-title" id="tasks">Решаемые задачи</h2>
+            <img src="src/img/bkg.jpg" alt="" class="tasks-bkg">
+            <div class="container">
+                <div class="tasks-block">
+                    <div class="tasks-block_item">
+                        <h3 class="theader">
+                            <span class="theader-cnt">1</span>
+                            <span class="theader-txt">Локализация</span>
                         </h3>
-                        <p class="item-inf_text">
-                            5 мая 2018 года на участке федеральной трассы  Новороссийск — Керчь
-                            в рамках проекта «Караван» состоялся премьерный тестовый проезд ...
+                        <p class="theader-text">Получение ориентации, курса, высоты, 3D положения.
+                            Вычисления выполняются с точностью до 10 см.
+                            Для вычисления местоположения применяется GNSS.
+                            При потере сигнала используется инерциальная система, работающая в связке с GNSS, гироскопы, акселерометры, лидары. 
                         </p>
-                        <button class="item-inf_btn">Узнать больше</button> 
                     </div>
-
-
-                </div>
-                <div class="activity-blocks_block item activity-blocks_middle">
-                    
-                    <div class="item-wrapper">
-                        <img src="src/img/activity/item2.jpg" alt="" class="item-img">
-                    </div>
-
-                    <div class="item-wrapper">
-                        <h3 class="item-inf_title">
-                            Ice Vision
+                    <div class="tasks-block_item">
+                        <h3 class="theader">
+                            <span class="theader-cnt">2</span>
+                            <span class="theader-txt">Планирование</span>
                         </h3>
-                        <p class="item-inf_text">
-                            Соревнования, направленные на поиск решений, позволяющих распозновать
-                            дорогу дорожную обстановку даже в экстримальных условиях  ...
+                        <p class="theader-text">Построение оптимальной  траектории движения из одной точки 
+                            в другую с целью максимально разгрузить транспортную сеть.
+                            Используем нашу уникальную разработку -
+                            ЦИФРОВАЯ МОДЕЛЬ ДОРОГИ 
                         </p>
-                        <button class="item-inf_btn">Узнать больше</button>
                     </div>
-
-                </div>
-                <div class="activity-blocks_block item">
-
-                    <div class="item-wrapper">
-                        <img src="src/img/activity/item3.jpg" alt="" class="item-img">
-                    </div>
-
-                    <div class="item-wrapper">
-                        <h3 class="item-inf_title">
-                            Зимний город
+                    <div class="tasks-block_item">
+                        <h3 class="theader">
+                            <span class="theader-cnt">3</span>
+                            <span class="theader-txt">Распознавание</span>
                         </h3>
-                        <p class="item-inf_text">
-                            С 26 февраля по 5 марта прошли квалификационные испытания
-                            для участников технологического конкурса Up Great ...
+                        <p class="theader-text">Детектирование препятствий на дороге и классификация  данных. 
+                            В зависимости от этого программирование  различного поведение авто.
+                            Задействуются видеокамеры, лидары 
+                            Нейросети обрабатывают информацию, затем передают объекты.
                         </p>
-                        <button class="item-inf_btn">Узнать больше</button>                        
                     </div>
-
                 </div>
             </div>
         </div>
-    </div>
-   
-    <div class="tasks">
-        <h2 class="tasks-title">Решаемые задачи</h2>
-        <img src="src/img/bkg.jpg" alt="" class="tasks-bkg">
-        <div class="container">
-            <div class="tasks-block">
-                <div class="tasks-block_item">
-                    <h3 class="theader">
-                        <span class="theader-cnt">1</span>
-                        <span class="theader-txt">Локализация</span>
-                    </h3>
-                    <p class="theader-text">Получение ориентации, курса, высоты, 3D положения.
-                        Вычисления выполняются с точностью до 10 см.
-                        Для вычисления местоположения применяется GNSS.
-                        При потере сигнала используется инерциальная система, работающая в связке с GNSS, гироскопы, акселерометры, лидары. 
-                    </p>
-                </div>
-                <div class="tasks-block_item">
-                    <h3 class="theader">
-                        <span class="theader-cnt">2</span>
-                        <span class="theader-txt">Планирование</span>
-                    </h3>
-                    <p class="theader-text">Построение оптимальной  траектории движения из одной точки 
-                        в другую с целью максимально разгрузить транспортную сеть.
-                        Используем нашу уникальную разработку -
-                        ЦИФРОВАЯ МОДЕЛЬ ДОРОГИ 
-                    </p>
-                </div>
-                <div class="tasks-block_item">
-                    <h3 class="theader">
-                        <span class="theader-cnt">3</span>
-                        <span class="theader-txt">Распознавание</span>
-                    </h3>
-                    <p class="theader-text">Детектирование препятствий на дороге и классификация  данных. 
-                        В зависимости от этого программирование  различного поведение авто.
-                        Задействуются видеокамеры, лидары 
-                        Нейросети обрабатывают информацию, затем передают объекты.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="team">
-        <div class="container">
-            <h2 class="team-title">Наша команда</h2>
-            <div class="team-blocks">
-                <div class="team-block">
-                    <div class="team-block_im">
-                        <img src="src/img/team/ng.jpg" alt="" class="team-block_img">
-                    </div>    
-                    <h3 class="team-block_title">Никита Голубченко</h3>
-                    <p class="team-block_text"> Архитектор интелектуальных систем беспилотного транспорта</p>
-                </div>
-                <div class="team-block">
-                    <div class="team-block_im">
-                        <img src="src/img/team/ps.png" alt="" class="team-block_img">
-                    </div>    
-                    <h3 class="team-block_title">Пахомов Сергей</h3>
-                    <p class="team-block_text">Инженер-электронщик</p>
-                </div>
-                <div class="team-block">
-                    <div class="team-block_im">
-                        <img src="src/img/team/az.png" alt="" class="team-block_img">
+        <div class="team">
+            <div class="container" id="team">
+                <h2 class="team-title">Наша команда</h2>
+                <div class="team-blocks">
+                    <div class="team-block">
+                        <div class="team-block_im">
+                            <img src="src/img/team/ng.jpg" alt="" class="team-block_img">
+                        </div>    
+                        <h3 class="team-block_title">Никита Голубченко</h3>
+                        <p class="team-block_text"> Архитектор интелектуальных систем беспилотного транспорта</p>
                     </div>
-                    <h3 class="team-block_title">Александр Замыцких</h3>
-                    <p class="team-block_text">Специалист по внешнему техническому зрению</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="contacts">
-        <div class="container">
-            <a href="#contacts"></a>
-            <div class="contacts-block">
-                <div class="contacts-blocks">
-                    <h2 class="contacts-title">Контакты</h2>
-                    <div class="contacts-text">
-                        <p class="contacts-text_p">Жанказиев Султан Владимирович<br>
-                            8 (499) 155-04-17<br>zhankaziev@obd.madi.ru</p>
-                        <p class="contacts-text_p">Воробьёв Андрей Игоревич<br>
-                            8 (499) 155-04-17<br>vorobev@obd.madi.ru</p>
-                        <p class="contacts-text_p">Голубченко Никита <br>
-                            8 (968) 837-59-68<br>zhankaziev@obd.madi.ru</p>    
+                    <div class="team-block">
+                        <div class="team-block_im">
+                            <img src="src/img/team/ps.png" alt="" class="team-block_img">
+                        </div>    
+                        <h3 class="team-block_title">Пахомов Сергей</h3>
+                        <p class="team-block_text">Инженер-электронщик</p>
                     </div>
-                    
-                </div>
-                <div class="contacts-blocks">
-                    <h2 class="contacts-title">Форма обратной связи</h2>
-                    <div class="contacts-input">
-                        <p class="contacts-input_text">Имя</p>
-                        <input type="text" class="contacts-input_inp">
-                        <p class="contacts-input_text">Почтовый адрес</p>
-                        <input type="text" class="contacts-input_inp">
-                        <p class="contacts-input_text">Ваш вопрос</p>
-                        <input type="text" class="contacts-input_inp contacts-input_qstn">
+                    <div class="team-block">
+                        <div class="team-block_im">
+                            <img src="src/img/team/az.png" alt="" class="team-block_img">
+                        </div>
+                        <h3 class="team-block_title">Александр Замыцких</h3>
+                        <p class="team-block_text">Специалист по внешнему техническому зрению</p>
                     </div>
-                    <button class="contacts-input_btn">Отправить</button>
-
-                </div>                
-            </div>
-
-        </div>
-    </div>
-
-    <div class="footer">
-        <div class="container">
-            <div class="footer-inf">
-                <img src="src/img/Logo.svg" alt="" class="footer-img">
-                <div class="footer-social">
-                    <a href="#" class="footer-social_a">
-                        <img src="src/img/icons/iconYoutube.svg" alt="" class="footer-social_img">
-                    </a>
-                    <a href="#" class="footer-social_a">
-                        <img src="src/img/icons/iconVK.svg" alt="" class="footer-social_img">
-                    </a>
-                    <a href="#" class="footer-social_a">
-                        <img src="src/img/icons/iconFB.svg" alt="" class="footer-social_img">
-                    </a>
-                    <a href="#" class="footer-social_a">
-                        <img src="src/img/icons/iconTwitter.svg" alt="" class="footer-social_img">
-                    </a>
                 </div>
             </div>
         </div>
+
+        <div class="contacts">
+            <div class="container" id="contacts">
+                <a href="#contacts"></a>
+                <div class="contacts-block">
+                    <div class="contacts-blocks">
+                        <h2 class="contacts-title">Контакты</h2>
+                        <div class="contacts-text">
+                            <p class="contacts-text_p">Жанказиев Султан Владимирович<br>
+                                8 (499) 155-04-17<br>zhankaziev@obd.madi.ru</p>
+                            <p class="contacts-text_p">Воробьёв Андрей Игоревич<br>
+                                8 (499) 155-04-17<br>vorobev@obd.madi.ru</p>
+                            <p class="contacts-text_p">Голубченко Никита <br>
+                                8 (968) 837-59-68<br>zhankaziev@obd.madi.ru</p>    
+                        </div>
+                        
+                    </div>
+                    <div class="contacts-blocks">
+                        <h2 class="contacts-title">Форма обратной связи</h2>
+                        <div class="contacts-input">
+                            <p class="contacts-input_text">Имя</p>
+                            <input type="text" class="contacts-input_inp">
+                            <p class="contacts-input_text">Почтовый адрес</p>
+                            <input type="text" class="contacts-input_inp">
+                            <p class="contacts-input_text">Ваш вопрос</p>
+                            <textarea id="text" class="contacts-input_qstn"></textarea>
+                        </div>
+                        <button class="contacts-input_btn">Отправить</button>
+
+                    </div>                
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <div class="footer-inf">
+                    <img src="src/img/Logo.svg" alt="" class="footer-img">
+                    <div class="footer-social">
+                        <a href="#" class="footer-social_a">
+                            <img src="src/img/icons/iconYoutube.svg" alt="" class="footer-social_img">
+                        </a>
+                        <a href="#" class="footer-social_a">
+                            <img src="src/img/icons/iconVK.svg" alt="" class="footer-social_img">
+                        </a>
+                        <a href="#" class="footer-social_a">
+                            <img src="src/img/icons/iconFB.svg" alt="" class="footer-social_img">
+                        </a>
+                        <a href="#" class="footer-social_a">
+                            <img src="src/img/icons/iconTwitter.svg" alt="" class="footer-social_img">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
-    <script src="src/js/main.js"></script>
+    <script src="src/js/main.js"></script>  
 </body>
 </html>
